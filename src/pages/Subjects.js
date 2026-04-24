@@ -8,7 +8,7 @@ export default function Subjects() {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/subjects').then(r => r.json()).then(data => {
+    fetch('https://unglazed-kitchen-buggy.ngrok-free.dev/subjects').then(r => r.json()).then(data => {
       setSubjects(data);
       setSelected(data[0]);
     });

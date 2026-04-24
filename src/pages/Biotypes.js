@@ -9,7 +9,7 @@ export default function Biotypes() {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/subjects').then(r => r.json()).then(setSubjects);
+    fetch('https://unglazed-kitchen-buggy.ngrok-free.dev/subjects').then(r => r.json()).then(setSubjects);
   }, []);
 
   const filtered = subjects.filter(s => {

@@ -8,7 +8,7 @@ export default function Compare() {
   const [subjectB, setSubjectB] = useState(null);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/subjects').then(r => r.json()).then(data => {
+    fetch('https://unglazed-kitchen-buggy.ngrok-free.dev/subjects').then(r => r.json()).then(data => {
       setSubjects(data);
       setSubjectA(data[0]);
       setSubjectB(data[10]);
