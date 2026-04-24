@@ -6,7 +6,7 @@ export default function Models() {
   const [models, setModels] = useState([]);
 
   useEffect(() => {
-    fetch('https://unglazed-kitchen-buggy.ngrok-free.dev/model_comparison').then(r => r.json()).then(setModels);
+    fetch('https://psyche-backend-u0rt.onrender.com/model_comparison').then(r => r.json()).then(setModels);
   }, []);
 
   const psyche = models.find(m => m.name === 'PSYCHE (multimodal fusion)');

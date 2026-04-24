@@ -21,7 +21,7 @@ export default function Upload() {
     try {
       const form = new FormData();
       form.append('file', file);
-      const res = await fetch('https://unglazed-kitchen-buggy.ngrok-free.dev/predict', { method: 'POST', body: form });
+      const res = await fetch('https://psyche-backend-u0rt.onrender.com/predict', { method: 'POST', body: form });
       const data = await res.json();
       if (data.error) setError(data.error);
       else setResults(data);

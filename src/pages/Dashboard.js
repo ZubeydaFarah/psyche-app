@@ -7,8 +7,8 @@ export default function Dashboard() {
   const [biotypes, setBiotypes] = useState([]);
 
   useEffect(() => {
-    fetch('https://unglazed-kitchen-buggy.ngrok-free.dev/results').then(r => r.json()).then(setResults);
-    fetch('https://unglazed-kitchen-buggy.ngrok-free.dev/biotypes').then(r => r.json()).then(setBiotypes);
+    fetch('https://psyche-backend-u0rt.onrender.com/results').then(r => r.json()).then(setResults);
+    fetch('https://psyche-backend-u0rt.onrender.com/biotypes').then(r => r.json()).then(setBiotypes);
   }, []);
 
   const psyche = results.find(r => r.name === 'PSYCHE (multimodal fusion)');
